@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ body{
+    margin: 2em auto;
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    background-color: rgb(136, 147, 144);
+ }
+
+ .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 105vh;
+    padding: 20px;
+    border: 50px solid rgb(39, 35, 35);
+    background: rgb(33, 31, 31);
+    border-radius: 20px;
+
+ }
+.logo {
+    display: flex;
+    color: rgb(248, 246, 246);
+    font-size: 2em;
+    font-style: italic;
+    gap:10px;
+    text-shadow: 10px 10px 10px;
+}
+.logo span{
+    color: rgb(9, 13, 0);
+    font-style: italic;
+    
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(79, 72, 71);
+    height: 80px;
+    padding: 0px 50px 0px 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px -20px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-shadow: 15px 15px 30px; 
+}
+#click{
+display: none;
+
+
+}
+nav ul li a{
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    transition: all .5s ease;
+
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    cursor: pointer;
+    padding: 5px;
+    
+
+}
+.profile i{
+    color: rgb(197, 218, 218);
+}
+.profile img{
+    border: 5px solid rgb(12, 12, 12);
+    padding: 2px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.hamburger{
+    display: none;
+
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: black;
+    background:rgb(119, 144, 174) ;
+    
+
+}
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height:auto;
+    gap:20px; 
+}
+
+    .container-1{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height:35vh;
+        gap:20px; 
+    }
+
+
+.div-1{
+    flex-wrap: wrap;
+    width: 65%;
+    height: auto;
+    border-radius: 20px;
+    background: rgb(36, 35, 35);
+    
+}
+.div-1 p{
+    color: rgb(149, 147, 145);
+}
+
+.div-1-btn{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.div-1-btn ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.div-1-btn ul a{
+    display: flex;
+    align-content: center;
+    padding: 2px 20px;
+    background-color: rgb(128, 159, 158);
+    border-radius: 50px ;
+    text-decoration: none;
+    box-shadow: 1px 0px 5px .5px;
+    font-size: 20px;
+    color: black;
+    transition: all .3s ease;
+
+
+}
+.div-1-btn ul a:hover,
+.div-1-btn ul a.active{
+    background: grey;
+    color: aliceblue;
+}
+.bx{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+
+}
+.bx h2{
+    color:rgb(215, 203, 203);
+}
+
+.bx span{
+    font-size: 24px;
+}
+.btn-2{
+    display: flex;
+    position: absolute;
+    left:10em;
+    gap: 5px;
+
+}
+.btn-2 a{
+    padding: 5px 20px; 
+    background:rgb(24, 205, 130) ;
+    color: rgb(17, 18, 18);
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 50px;
+}
+.btn-2 a i{
+    font-size: 20px;
+}
+button{
+    margin: 10px;
+    padding: 5px 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(43, 42, 42);
+    color: rgb(193, 190, 187);
+    box-shadow: 1px 1px 5px .5px;
+    transition: all ease .5s;
+
+}
+button:hover{
+    background-color: rgb(66, 69, 69);
+    color: rgb(111, 166, 221);
+}
+.image{
+    display: flex;
+    position: relative;
+    top:25px;
+    width: 100%;
+    height: 35vh;
+    padding: 10px;
+    background: rgb(47, 44, 44);
+    border-radius: 20px ;
+
+}
+
+.image img{
+    position: relative;
+    width: 1600px;
+    height: 400px;
+    border-radius: 20px ;
+    
+}
+.div-2{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(38, 36, 36);
+    width: 35%;
+    height: auto;
+    border-radius: 20px;
+    margin: 2px;
+}
+.div-2 img{
+    width:100%;
+    height: auto;
+    border-radius: 20px;  
+}
+
+.div-3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+    padding: 1px;
+    border-radius: 20px;
+    
+}
+
+.div-3 img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.div-3-btn{
+    position: absolute;
+    left: 140px;
+    bottom: 100px;
+    background:rgb(45, 44, 45);
+    color: rgb(171, 177, 182);
+    font-size: 20px;
+    padding: 10px 30px;
+    
+}
+.div-4{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 75%;
+    height: auto;
+    border-radius: 20px;
+    background: rgb(35, 34, 34);
+    
+}
+.div-4-bx{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.div-4-bx p{
+    font-size: 24px;
+    color: rgb(168, 173, 176);
+}
+.div-4-btn{
+   display: flex;
+   background: rgb(40, 38, 38);
+   color: rgb(166, 172, 172);
+   padding: 5px 30px;
+   gap:30px;
+   font-size: 20px;
+}
+ .div-4-img{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 20px;
+    background: rgb(35, 34, 34);
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    
+ }
+
+.div-4-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+
+@media (max-width: 767px) {
+    #click:checked ~ .hamburger i::before{
+        content: "\f00d";
+    }
+
+ 
+    nav{
+        position: relative;
+        position:fixed;  
+        width: 70%; 
+        margin: 5px; 
+     }
+
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 280px;
+        left: -100%;
+        margin-left: 120px;
+        height: 20vh;
+        width: 40%;
+        background-color: rgb(79, 72, 71); 
+        border-radius: 10px;    
+        
+    }
+    #click:checked ~ ul{
+        left:0%;
+    }
+    nav ul li {
+         margin: 10px 20px;
+    }
+    nav ul li a{
+        display: block;
+        font-size: 20px;
+        margin-left: 50px;
+        
+    }
+    .logo{
+        position: relative;
+        margin-left: -30px;
+        font-size: 40px;
+    }
+    .profile{
+        display: none;
+        
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: rgb(21, 21, 21);
+        background: none;}
+
+        .hamburger{
+            display: block; 
+            font-size: 30px;
+            padding: 20px 20px;
+            cursor: pointer;
+            color: rgb(163, 211, 223);
+        }  
+           
+        .main-container{ 
+         width: 100%;   
+         height: 150vh; 
+        }
+         
+        .container{
+            display: flex;
+            position: relative;
+            top:350px;
+            flex-wrap: wrap;
+            height: 60vh; 
+            overflow: hidden;
+        }
+        
+        .div-1{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top:10px;
+            width: 100%;    
+        }
+
+        .div-1 p{
+            padding: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .div-1-btn{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 4px;
+            margin: 0px;
+            justify-content: space-between;
+        }
+        
+        .div-1-btn ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .div-1-btn ul a{
+            display: flex;
+            padding: 2px 20px;
+            font-size: 20px;
+        }
+    
+        .bx{
+            padding:5px;
+            margin: 5px; 
+        }
+        .bx h2{
+            font-size: 24px;
+        }
+        
+        .bx span{
+            font-size:16px;
+        }
+        .btn-2{
+            position: absolute;
+            left: 170px;
+            gap: 5px;
+        
+        }
+        .btn-2 a{
+            padding: 5px 10px; 
+            font-size: 16px;
+        }
+        .btn-2 a i{
+            font-size: 20px;
+        }
+        button{
+            margin: 0;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+        .image{
+            flex-wrap: wrap;
+            top:50px;
+            width: 100%;
+            padding: 10px;
+        }
+        .image img{
+            position: relative;
+            width: 100%;
+            height: 250px;
+            
+        }
+        .div-2{
+            position: relative;
+            top:-100px;
+            padding: 2px;
+            width: 100%;
+            margin: 5px;
+        }
+        .div-2 img{
+            display: flex;
+            width:100%;
+            height: 220px;  
+        } 
+        .container-1{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            top:170px;
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+
+        }
+
+        .div-3 {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            padding: 5px;
+        }
+        .div-3-btn{
+            position: relative;
+            align-content: center;
+            left: 100px;
+        }
+        .div-4{
+            display: flex;
+            width: 100%;
+            height:300px ;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
