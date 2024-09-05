@@ -13,6 +13,22 @@ body {
   background-color: rgb(240, 233, 233);
 }
 
+nav {
+  display: flex;
+  position: faxed;
+  width: 100%;
+  height: 140px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 240, 240);
+  padding: 20px 50px 20px 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px -20px;
+  font-family: cursive, Courier, sans-serif;
+  overflow: hidden;
+  gap: 30px;
+  z-index: 1;
+}
 .logo {
   display: flex;
   position: relative;
@@ -25,22 +41,6 @@ body {
   margin: 0px;
   padding: 10px 50px;
   border-radius: 100px;
-}
-nav {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 140px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(233, 240, 240);
-  padding: 20px 50px 20px 50px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 50px -20px;
-  font-family: cursive, Courier, sans-serif;
-  overflow: hidden;
-  gap: 30px;
-  
 }
 nav ul {
   display: flex;
